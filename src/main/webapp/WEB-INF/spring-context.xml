@@ -14,7 +14,7 @@
     <!-- 此项目的使用注解映射-->
     <mvc:annotation-driven/>
     <!-- 告诉我你的Controller 在哪个包中-->
-    <context:component-scan base-package="org.taru.controller.api"/>
+    <context:component-scan base-package="org.taru.api.api"/>
 
 
     <mvc:resources mapping="/static/css/**" location="/static/css/"  />
@@ -30,13 +30,14 @@
 
     </bean>
 
-    <!-- 多部分文件上传 -->
+    <!-- 支持上传文件 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="104857600"/>
-        <property name="maxInMemorySize" value="4096"/>
-        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="defaultEncoding" value="utf-8"></property>
+        <property name="maxUploadSize" value="10485760000"></property>
+        <property name="maxInMemorySize" value="40960"></property>
     </bean>
 
+    <context:property-placeholder ignore-unresolvable="true" location="classpath:application.properties"/>
 
 </beans>
 

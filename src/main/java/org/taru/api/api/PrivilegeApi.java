@@ -1,4 +1,4 @@
-package org.taru.api;
+package org.taru.api.api;
 
 public class PrivilegeApi {
 

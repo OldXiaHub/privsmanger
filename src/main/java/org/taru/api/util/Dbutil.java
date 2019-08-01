@@ -12,7 +12,7 @@ public class Dbutil {
 	private static ThreadLocal<Connection> Local=new ThreadLocal<Connection>();
 	static {
 		try {
-			properties.load(Dbutil.class.getClassLoader().getResourceAsStream("db.properties"));
+			properties.load(Dbutil.class.getClassLoader().getResourceAsStream("application.properties"));
 			System.out.println("���óɹ�");
 		} catch (IOException e) {
 			// TODO �Զ����ɵ� catch ��
