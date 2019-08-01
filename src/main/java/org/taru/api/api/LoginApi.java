@@ -1,7 +1,10 @@
 package org.taru.api.api;
 
-public class LoginApi {
-    public void login(String username,String password){
+import org.taru.api.vo.JsonResult;
 
+public class LoginApi {
+    public JsonResult login(String username, String password){
+
+        return null;
     }
 }
