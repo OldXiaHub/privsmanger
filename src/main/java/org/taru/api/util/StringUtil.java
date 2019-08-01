@@ -1,4 +1,4 @@
-package util;
+package org.taru.api.util;
 
 public class StringUtil {
 	/**
