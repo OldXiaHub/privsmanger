@@ -1,4 +1,4 @@
-package vo;
+package org.taru.api.vo;
 
 
 public class JsonResult {

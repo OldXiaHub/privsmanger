@@ -1,4 +1,4 @@
-package entity;
+package org.taru.api.entity;
 
 public class Role {
     private String roleId;

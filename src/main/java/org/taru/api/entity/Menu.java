@@ -1,4 +1,4 @@
-package entity;
+package org.taru.api.entity;
 
 import java.util.ArrayList;
 import java.util.List;
