@@ -3,7 +3,7 @@ package org.taru.api.entity;
 
 public class User {
 
-  private long userId;
+  private int userId;
   private String userName;
   private String userPassword;
   private String mobile;
@@ -20,7 +20,7 @@ public class User {
     return userId;
   }
 
-  public void setUserId(long userId) {
+  public void setUserId(int userId) {
     this.userId = userId;
   }
 
