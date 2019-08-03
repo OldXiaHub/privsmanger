@@ -3,7 +3,7 @@ package org.taru.api.entity;
 
 public class Permission {
 
-  private long id;
+  private String id;
   private String permissionName;
   private String parentId;
   private String permissionUlr;
@@ -18,11 +18,11 @@ public class Permission {
   private String permissionLastDelFlag;
 
 
-  public long getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(String id) {
     this.id = id;
   }
 

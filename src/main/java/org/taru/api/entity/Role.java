@@ -3,7 +3,7 @@ package org.taru.api.entity;
 
 public class Role {
 
-  private long roleId;
+  private String roleId;
   private String roleName;
   private String roleRemark;
   private String create_By;
@@ -13,11 +13,11 @@ public class Role {
   private String delFlag;
 
 
-  public long getRoleId() {
+  public String getRoleId() {
     return roleId;
   }
 
-  public void setRoleId(long roleId) {
+  public void setRoleId(String roleId) {
     this.roleId = roleId;
   }
 
