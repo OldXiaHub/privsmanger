@@ -14,9 +14,17 @@ import java.util.List;
 import java.util.Map;
 
 public class UserDao {
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
     public User login(String username,String password){
-        String sql="select *from user where user_id=?";
+        String sql="select *from user where USER_NAME= ? and USER_PASSWORD= ? ";
+        System.out.println(username+password);
         List<Map<String,Object>> list=Dbutil.query(sql,username,password);
+        System.out.println(list+"jjjj");
         User user=null;
         if(list.size()>0) {
             user=new User();
@@ -24,6 +32,7 @@ public class UserDao {
             user.setUserPassword(StringUtil.valueOf(list.get(0).get("USER_PASSWORD")));
 
         }
+
         return user;
     }
 
