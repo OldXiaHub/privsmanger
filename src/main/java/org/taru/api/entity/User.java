@@ -3,7 +3,7 @@ package org.taru.api.entity;
 
 public class User {
 
-  private long userId;
+  private String userId;
   private String userName;
   private String userPassword;
   private String mobile;
@@ -16,11 +16,11 @@ public class User {
   private java.sql.Timestamp lastUpdateTime;
 
 
-  public long getUserId() {
+  public String getUserId() {
     return userId;
   }
 
-  public void setUserId(long userId) {
+  public void setUserId(String userId) {
     this.userId = userId;
   }
 
