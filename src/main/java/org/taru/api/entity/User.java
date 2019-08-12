@@ -6,14 +6,11 @@ public class User {
   private String userId;
   private String userName;
   private String userPassword;
-  private String mobile;
-  private String userEmail;
-  private String userStatus;
-  private String createBy;
-  private java.sql.Timestamp createTime;
-  private String lastUpdateBy;
-  private String delFlag;
-  private java.sql.Timestamp lastUpdateTime;
+  private String userTelphone;
+  private String userAddress;
+  private long userStatus;
+  private String userComment;
+  private String userImage;
 
 
   public String getUserId() {
@@ -43,75 +40,48 @@ public class User {
   }
 
 
-  public String getMobile() {
-    return mobile;
+  public String getUserTelphone() {
+    return userTelphone;
   }
 
-  public void setMobile(String mobile) {
-    this.mobile = mobile;
-  }
-
-
-  public String getUserEmail() {
-    return userEmail;
-  }
-
-  public void setUserEmail(String userEmail) {
-    this.userEmail = userEmail;
+  public void setUserTelphone(String userTelphone) {
+    this.userTelphone = userTelphone;
   }
 
 
-  public String getUserStatus() {
+  public String getUserAddress() {
+    return userAddress;
+  }
+
+  public void setUserAddress(String userAddress) {
+    this.userAddress = userAddress;
+  }
+
+
+  public long getUserStatus() {
     return userStatus;
   }
 
-  public void setUserStatus(String userStatus) {
+  public void setUserStatus(long userStatus) {
     this.userStatus = userStatus;
   }
 
 
-  public String getCreateBy() {
-    return createBy;
+  public String getUserComment() {
+    return userComment;
   }
 
-  public void setCreateBy(String createBy) {
-    this.createBy = createBy;
-  }
-
-
-  public java.sql.Timestamp getCreateTime() {
-    return createTime;
-  }
-
-  public void setCreateTime(java.sql.Timestamp createTime) {
-    this.createTime = createTime;
+  public void setUserComment(String userComment) {
+    this.userComment = userComment;
   }
 
 
-  public String getLastUpdateBy() {
-    return lastUpdateBy;
+  public String getUserImage() {
+    return userImage;
   }
 
-  public void setLastUpdateBy(String lastUpdateBy) {
-    this.lastUpdateBy = lastUpdateBy;
-  }
-
-
-  public String getDelFlag() {
-    return delFlag;
-  }
-
-  public void setDelFlag(String delFlag) {
-    this.delFlag = delFlag;
-  }
-
-
-  public java.sql.Timestamp getLastUpdateTime() {
-    return lastUpdateTime;
-  }
-
-  public void setLastUpdateTime(java.sql.Timestamp lastUpdateTime) {
-    this.lastUpdateTime = lastUpdateTime;
+  public void setUserImage(String userImage) {
+    this.userImage = userImage;
   }
 
 }
